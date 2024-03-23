@@ -1,0 +1,19 @@
+[package]
+name = "address-macros"
+description = "A crate for decoding addresses at compile-time."
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+radix-engine-common = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
+radix-engine-interface = { git = "https://github.com/radixdlt/radixdlt-scrypto", tag = "v1.1.1" }
+
+proc-macro2 = { version = "1.0.76" }
+syn = "2.0.52"
+quote = "1.0.35"
+paste = "1.0.14"
+
+[lib]
+doctest = false
+proc-macro = true
+
